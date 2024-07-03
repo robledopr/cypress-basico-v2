@@ -109,7 +109,7 @@ describe('preenche os campos obrigatórios e envia o formulário', function(){
         cy.get('#privacy a').should('have.attr', 'target', '_blank')
      })
 
-     it.only('remove o blank do link', function(){
+     it('remove o blank do link', function(){
         cy.get('#privacy a')
             .invoke('removeAttr', 'target') // remove o _blank do target
             .click()
