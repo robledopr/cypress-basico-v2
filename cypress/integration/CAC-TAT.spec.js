@@ -116,4 +116,8 @@ describe('preenche os campos obrigatórios e envia o formulário', function(){
         cy.contains('Talking About Testing').should('be.visible')
      })
 
+     it('cria teste para falhar', function(){
+        cy.get('#idquenaoexiste').type('Hello World').click()
+     })
+
 })
